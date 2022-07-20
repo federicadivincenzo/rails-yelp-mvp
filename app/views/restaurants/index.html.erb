@@ -1,0 +1,18 @@
+<h1>Restaurants: </h1>
+
+<%= link_to 'Create new restaurant ✨', new_restaurant_path %>
+
+<div class="container">
+  <div class="row">
+    <% @restaurants.each do |restaurant| %>
+      <div class="card col-3 m-1 round p-2">
+        <h1><%= link_to restaurant.name, restaurant_path(restaurant) %></h1>
+          <ul>
+            <li><%= restaurant.address %></li>
+            <li><%= restaurant.phone_number %></li>
+            <li><%= restaurant.category %></li>
+          </ul>
+      </div>
+    <% end %>
+  </div>
+</div>

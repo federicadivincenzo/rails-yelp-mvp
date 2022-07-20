@@ -1,0 +1,11 @@
+<h1>Welcome to: <%= @restaurant.name %></h1>
+<ul>
+  <li><%= @restaurant.address %></li>
+  <li><%= @restaurant.phone_number %></li>
+  <li><%= @restaurant.category %></li>
+</ul>
+
+<div>
+  <i class="fa-solid fa-pen-to-square"></i><%= link_to "Edit", edit_restaurant_path(@restaurant)  %>
+  <i class="fa-solid fa-trash-can"></i><%= link_to "Delete", restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you sure?" }  %>
+</div>
