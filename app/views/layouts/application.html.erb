@@ -12,8 +12,8 @@
 
   <body>
     <nav class="navbar p-1">
-      <h1>Restaurants</h1>
-      <%= link_to 'Create new restaurant ✨', new_restaurant_path %>
+      <h1><%=  link_to 'Rests 🍕🍟🍔', restaurants_path, class: "navbar-logo" %> </h1>
+      <%= link_to 'Create new restaurant ✨', new_restaurant_path, class: 'navbar-btn' %>
     </nav>
     <%= yield %>
   </body>

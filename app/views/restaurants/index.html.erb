@@ -5,11 +5,11 @@
         <div class="card card-test">
           <h1><%= restaurant.name %></h1>
             <ul>
-              <li><%= restaurant.address %></li>
-              <li><%= restaurant.phone_number %></li>
-              <li><%= restaurant.category %></li>
+              <li>📍 <%= restaurant.address %></li>
+              <li>☎️ <%= restaurant.phone_number %></li>
+              <li>🍽 <%= restaurant.category %></li>
             </ul>
-            <button class="btn"><%= link_to 'Discover more 🍕', restaurant_path(restaurant) %></button>
+           <button class="btn"><%= link_to 'Discover more 🍕', restaurant_path(restaurant) %></button>
         </div>
       <% end %>
 

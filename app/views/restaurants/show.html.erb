@@ -6,8 +6,8 @@
 </ul>
 
 <div>
-  <i class="fa-solid fa-pen-to-square"></i><%= link_to "Edit", edit_restaurant_path(@restaurant)  %>
-  <i class="fa-solid fa-trash-can"></i><%= link_to "Delete", restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you sure?" }  %>
+  <%= link_to "✍🏻 Edit", edit_restaurant_path(@restaurant), class: "btn-show"  %>
+  <%= link_to "🗑 Delete", restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you sure?" }, class: "btn-show"   %>
 </div>
 <br>
 <br>
@@ -16,7 +16,7 @@
 <% @reviews.each do |review| %>
 <p>Content: <strong><%= review.content %></strong></p>
 <p>Rating: <%= review.rating%></p>
-<%= link_to "Delete 🗑", review_path(review), method: :delete, data: { confirm: "Are you sure?" }   %>
+<%= link_to "Delete 🗑", review_path(review), method: :delete, data: { confirm: "Are you sure?" } , class: "btn"  %>
 <hr>
 <% end %>
 

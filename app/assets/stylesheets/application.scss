@@ -16,3 +16,25 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+.navbar {
+  padding: 0 3em;
+}
+
+.navbar h1 {
+  font-weight: bold;
+}
+
+.navbar-btn {
+  border-radius: 2em;
+  padding: .8em 1.3em;
+}
+
+.navbar-btn:hover {
+  background-color: rgba(203, 202, 202, 0.362);
+}
+
+.navbar-logo {
+  text-decoration: none;
+  color: black;
+}

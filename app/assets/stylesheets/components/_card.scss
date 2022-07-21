@@ -4,8 +4,21 @@
   align-items: center;
   border-radius: 2em;
   padding: 1em;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .card-test h1 {
   font-family: 'Poppins' !important;
+  font-size: 1.8em;
+}
+
+.card-test ul {
+  list-style: none;
+  color: rgb(81, 81, 81);
+  padding: 0;
+}
+
+.btn {
+  border: none !important;
 }
