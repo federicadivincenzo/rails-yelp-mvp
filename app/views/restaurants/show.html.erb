@@ -9,3 +9,14 @@
   <i class="fa-solid fa-pen-to-square"></i><%= link_to "Edit", edit_restaurant_path(@restaurant)  %>
   <i class="fa-solid fa-trash-can"></i><%= link_to "Delete", restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you sure?" }  %>
 </div>
+<br>
+<br>
+<h2>Reviews:</h2>
+<br>
+<% @reviews.each do |review| %>
+<p>Content: <strong><%= review.content %></strong></p>
+<p>Rating: <%= review.rating%></p>
+<hr>
+<% end %>
+
+<%= link_to "Add a review ⭐️", new_restaurant_review_path(@restaurant)  %>

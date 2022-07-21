@@ -4,5 +4,5 @@ class Restaurant < ApplicationRecord
   validates :phone_number, presence: true
   validates :category, presence: true
 
-  has_many :reviews
+  has_many :reviews, dependent: :destroy
 end
